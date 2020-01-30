@@ -1,0 +1,17 @@
+[{
+	"id": 1,
+	"image": "https://assets.adidas.com/images/w_840,h_840,f_auto,q_auto,fl_lossy/6a48858b62374aed8449a8af011d27ba_9366/Lite_Racer_CLN_Shoes_Blue_B96566_01_standard.jpg",
+	"brand": "adidas"
+}, {
+	"id": 2,
+	"image": "https://assets.reebok.com/images/w_840,h_840,f_auto,q_auto:sensitive,fl_lossy/00a17592970b4b8da286ab3800aaa37d_9366/Club_C_Revenge_Vintage_Shoes_White_FW4863_01_standard.jpg",
+	"brand": "reebok"
+}, {
+	"id": 3,
+	"image": "https://i1.adis.ws/i/jpl/jd_214003_a?qlt=80&w=600&h=425&v=1&fmt=webp",
+	"brand": "nike"
+}, {
+	"id": 4,
+	"image": "https://nb.scene7.com/is/image/NB/mcruznn2_nb_02_i?$pdpPictLG2x$&fmt=webp",
+	"brand": "new balance"
+}]

@@ -1,17 +1,50 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Header 
+      :numCorrect="numCorrect"
+    />
+    <b-container class="bv-example-row">
+        <b-row>
+          <b-col>
+            <GameBoard 
+              v-if="gameData.length"
+              :gameData="gameData"
+              :increment="increment"
+              :resetIncrement="resetIncrement"
+            />
+          </b-col>
+        </b-row>
+      </b-container>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/Header.vue'
+import GameBoard from './components/GameBoard.vue'
+import gamedata from './assets/gamedata.json'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Header,
+    GameBoard
+  },
+  data() {
+    return {
+      gameData: gamedata,
+      index: 0,
+      numCorrect: 0
+    }
+  },
+  methods: {
+    increment(isCorrect) {
+      if (isCorrect) {
+        this.numCorrect++
+      }
+    },
+    resetIncrement(){
+      this.numCorrect = 0
+    }
   }
 }
 </script>
